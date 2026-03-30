@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inscription</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../Assets/css/auth.css">
+</head>
+<body>
+	<section class="auth-card">
+		<h1>Inscription</h1>
+		<p class="lead">Cree ton compte pour etre enregistre en base de donnees.</p>
+
+		<form id="registerForm">
+			<label for="fullName">Nom complet</label>
+			<input id="fullName" name="fullName" type="text" required>
+
+			<label for="email">Email</label>
+			<input id="email" name="email" type="email" required>
+
+			<label for="role">Role</label>
+			<select id="role" name="role">
+				<option value="Plombier" selected>Plombier</option>
+				<option value="Technicien">Technicien</option>
+				<option value="Intervenant">Intervenant</option>
+			</select>
+
+			<label for="password">Mot de passe</label>
+			<input id="password" name="password" type="password" minlength="6" required>
+
+			<button type="submit">S'inscrire</button>
+		</form>
+
+		<p id="feedback" class="feedback"></p>
+		<p class="switch">Deja un compte ? <a href="connection.html">Se connecter</a></p>
+	</section>
+
+	<script src="../src/script/inscription.js"></script>
+</body>
+</html>

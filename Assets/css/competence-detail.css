@@ -10,7 +10,9 @@
   --waiting: #f4b308;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -88,8 +90,13 @@ main {
   letter-spacing: 0.04em;
 }
 
-.tag.valid { color: var(--valid); }
-.tag.waiting { color: var(--waiting); }
+.tag.valid {
+  color: var(--valid);
+}
+
+.tag.waiting {
+  color: var(--waiting);
+}
 
 .code {
   margin: 8px 0 0;

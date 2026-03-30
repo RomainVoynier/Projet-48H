@@ -1,0 +1,138 @@
+:root {
+  --bg: #00060d;
+  --panel: #4d768d;
+  --line: #0a1623;
+  --text: #f6f9ff;
+  --muted: #9ab0c9;
+  --card: #081321;
+  --active: #29b8ff;
+  --valid: #2e9cff;
+  --waiting: #f4b308;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #111;
+  color: var(--text);
+  font-family: "Manrope", "Segoe UI", sans-serif;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.top-header {
+  background: var(--panel);
+  padding: 20px 18px 22px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #eaf4fd;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.back-link .material-symbols-outlined {
+  font-size: 24px;
+}
+
+h1 {
+  margin: 16px 0 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(30px, 4vw, 46px);
+}
+
+.subtitle {
+  margin: 8px 0 0;
+  color: #d4e4f2;
+  font-size: clamp(16px, 2vw, 22px);
+}
+
+main {
+  padding: 16px 18px 28px;
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.head-card {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.head-card img {
+  width: 84px;
+  height: 84px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.tag.valid { color: var(--valid); }
+.tag.waiting { color: var(--waiting); }
+
+.code {
+  margin: 8px 0 0;
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 800;
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: clamp(18px, 2.4vw, 24px);
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+li + li {
+  margin-top: 6px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 700px) {
+  .app-shell {
+    max-width: 720px;
+    margin: 0 auto;
+    border-left: 1px solid #172332;
+    border-right: 1px solid #172332;
+  }
+
+  .split {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -3,7 +3,7 @@
 		{ id: 1, name: "Dupont Alain", role: "Chef de Centre Incendie", description: "Responsable de la coordination et gestion opérationnelle du centre d'incendie.", image: "https://media.istockphoto.com/id/1181447291/fr/photo/verticale-du-pompier.jpg?s=1024x1024&w=is&k=20&c=NnXvn-GFBdLhxmsF6_BHrjPXzQbl7KDWo9pkMCEAW4g=" },
 		{ id: 2, name: "Roux Jean-Baptiste", role: "Pompier", description: "Interventions d'urgence, secours en montagne et situations critiques.", image: "https://media.istockphoto.com/photos/closeup-portrait-of-heroic-fireman-in-protective-suit-and-red-helmet-picture-id1425152341?k=20&m=1425152341&s=170667a&w=0&h=Nk3blMBpDmw4bT6wQuskttP6HXQvTZMgJ36R-ZRK0v0=" },
 		{ id: 3, name: "Martin Lea", role: "Secouriste", description: "Assistance médicale d'urgence et premiers soins sur les lieux d'intervention.", image: "https://media.istockphoto.com/photos/portrait-of-female-firefighter-in-helmet-leaning-on-truck-at-fire-picture-id1061369876?k=20&m=1061369876&s=170667a&w=0&h=S3awLz-b1tbBufcsdACEkj6peujiZlWj1a5ARDYBhKU=" },
-		{ id: 4, name: "Durand Sophie", role: "Infirmiere", description: "Soins médicaux spécialisés et suivi sanitaire des opérations.", image: "https://media.istockphoto.com/id/1181447291/fr/photo/verticale-du-pompier.jpg?s=1024x1024&w=is&k=20&c=NnXvn-GFBdLhxmsF6_BHrjPXzQbl7KDWo9pkMCEAW4g=" },
+		{ id: 4, name: "Durand Sophie", role: "Infirmiere", description: "Soins médicaux spécialisés et suivi sanitaire des opérations.", image: "https://www.istockphoto.com/fr/photo/camion-lourd-derri%C3%A8re-tenant-un-casque-de-protection-une-pompi%C3%A8re-en-uniforme-est-au-gm1445796935-484090564?searchscope=image%2Cfilm" },
 	];
 
 	const list = document.querySelector(".list"), searchInput = document.querySelector('input[type="search"]');

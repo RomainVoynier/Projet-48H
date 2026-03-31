@@ -7,8 +7,8 @@
 	const API_BASE = isFileProtocol ? "http://localhost:3000" : "";
 	
 	// Log pour debug
-	console.log("🔍 Mode détecté:", isFileProtocol ? "LOCAL (file://)" : "SERVEUR (http://)");
-	console.log("🔗 API_BASE:", API_BASE || "relatif (même serveur)");
+	console.log(" Mode détecté:", isFileProtocol ? "LOCAL (file://)" : "SERVEUR (http://)");
+	console.log(" API_BASE:", API_BASE || "relatif (même serveur)");
 
 	if (!form || !feedback) {
 		return;
@@ -36,8 +36,8 @@
 		try {
 			setFeedback("Connexion en cours...");
 			const apiUrl = `${API_BASE}/api/login`;
-			console.log("📤 Envoi vers:", apiUrl);
-			console.log("📦 Payload:", payload);
+			console.log(" Envoi vers:", apiUrl);
+			console.log(" Payload:", payload);
 			
 			const response = await fetch(apiUrl, {
 				method: "POST",
@@ -47,10 +47,10 @@
 				body: JSON.stringify(payload),
 			});
 
-			console.log("📥 Reponse status:", response.status);
+			console.log(" Reponse status:", response.status);
 			
 			const data = await response.json().catch(() => ({}));
-			console.log("📥 Reponse data:", data);
+			console.log(" Reponse data:", data);
 
 			if (!response.ok) {
 				setFeedback(data.message || "Connexion impossible.", true);
